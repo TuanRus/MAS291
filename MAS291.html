@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAS291 - Tai Lieu On Tap & Casio 580VN X</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #d32f2f;
+            text-align: center;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: #0056b3;
+            border-left: 5px solid #0056b3;
+            padding-left: 10px;
+            margin-top: 30px;
+            background-color: #e3f2fd;
+            padding: 10px;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        h4 {
+            color: #d32f2f;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .tip {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+            color: #d63384;
+        }
+        .key {
+            display: inline-block;
+            padding: 2px 6px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background: #eee;
+            font-size: 0.9em;
+            box-shadow: 1px 1px 0 #999;
+            margin: 0 2px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .math {
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .formula {
+            display: block;
+            background: #f8f9fa;
+            padding: 5px 10px;
+            border-left: 3px solid #6c757d;
+            margin: 5px 0 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MAS291 - TAI LIEU CAP TOC & CASIO 580VN X</h1>
+    <p style="text-align: center;">Tong hop kien thuc 10 chuong va huong dan bam may tinh thuc chien.</p>
+    <p style="text-align: center; font-weight: bold; color: #555;">lam boi Vo Thanh Tuan</p>
+
+    <div class="section">
+        <h2>PHAN 1: XAC SUAT (Chuong 1, 2, 3)</h2>
+        
+        <h3>Chuong 1 & 2: Xac suat co ban</h3>
+        <ul>
+            <li><strong>Quy tac cong:</strong> P(A &cup; B) = P(A) + P(B) - P(A &cap; B)</li>
+            <li><strong>Quy tac nhan:</strong> P(A &cap; B) = P(A) &times; P(B|A). (Neu doc lap thi nhan thang).</li>
+            <li><strong>Xác suất có điều kiện:</strong> P(A|B) = P(A &cap; B) / P(B).</li>
+            <li><strong>Cong thuc Bayes:</strong> Dung <em>Cay xac suat (Tree Diagram)</em> de giai nhanh nhat.</li>
+        </ul>
+
+        <h3>Chuong 3: Bien roi rac (Discrete Variables)</h3>
+        <ul>
+            <li><strong>Binomial (n, p):</strong> Thu n lan, tinh so lan thanh cong x.
+                <span class="formula">P(X=x) = nCx * p^x * (1-p)^(n-x)</span>
+            </li>
+            <li><strong>Poisson (&lambda;):</strong> So lan xay ra trong khoang thoi gian/khong gian. (Chu y doi &lambda; cung don vi).
+                <span class="formula">P(X=x) = (e^-&lambda; * &lambda;^x) / x!</span>
+            </li>
+            <li><strong>Geometric:</strong> Thu den khi thanh cong lan dau tien tai lan thu x.
+                <span class="formula">P(X=x) = (1-p)^(x-1) * p</span>
+            </li>
+            <li><strong>Hypergeometric:</strong> Lay n mau tu N (co K cai Success), tim x cai Success.
+                <span class="formula">P(X=x) = (KCx * (N-K)C(n-x)) / NCn</span>
+            </li>
+        </ul>
+        <div class="tip">
+            <strong>Meo bam may (Menu 6-1):</strong> De tinh Mean (&mu;) va Variance (&sigma;&sup2;) cua bang phan phoi bat ky:<br>
+            Nhap gia tri vao cot <strong>X</strong>, nhap xac suat vao cot <strong>Freq</strong>.<br>
+            Ket qua: Lay <strong>x&#772;</strong> (Mean) va <strong>&sigma;x</strong> (SD).
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>PHAN 2: BIEN LIEN TUC & THONG KE (Chuong 4, 5, 6)</h2>
+
+        <h3>Chuong 4: Phan phoi Chuan (Normal Distribution)</h3>
+        <ul>
+            <li>Tat ca dua ve chuan hoa Z: <strong>Z = (X - &mu;) / &sigma;</strong></li>
+            <li><strong>Tinh Xac Suat:</strong> Dung <code>Normal CD</code>.</li>
+            <li><strong>Tim gia tri k:</strong> Dung <code>Inverse Normal</code>.</li>
+        </ul>
+
+        <h3>Chuong 5: Thong ke mo ta</h3>
+        <ul>
+            <li><strong>Sample Mean (x&#772;):</strong> Trung binh mau.</li>
+            <li><strong>Sample SD (s):</strong> Do lech chuan mau (chia cho n-1).</li>
+        </ul>
+        <div class="note">
+            <strong>LUU Y SONG CON:</strong> Khi bam may thong ke mau (Menu 6-1), ket qua do lech chuan phai lay dong <strong>s<sub>x</sub></strong>. Tuyet doi khong lay &sigma;<sub>x</sub>.
+        </div>
+
+        <h3>Chuong 6: Ung dung nang cao (CLT)</h3>
+        <p>Khi de hoi xac suat cho <strong>Trung binh mau (Mean)</strong> cua n phan tu:</p>
+        <div class="tip">
+            <strong>Meo bam may sieu nhanh:</strong><br>
+            Van dung <code>Normal CD</code>, nhung tai o <strong>&sigma;</strong>, nhap phep tinh: <code>&sigma; goc</code> &div; <code>&radic;(n)</code>.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>PHAN 3: SUY DIEN THONG KE (Chuong 7 - 10)</h2>
+
+        <h3>Chuong 7 & 8: Mot mau (1 Sample)</h3>
+        <p><strong>Quy tac chon Z hay T:</strong></p>
+        <ul>
+            <li>Biet &sigma; HOAC n &ge; 30 &rarr; Dung <strong>Z</strong>.</li>
+            <li>Khong biet &sigma; (chi co s) VA n < 30 &rarr; Dung <strong>T</strong>.</li>
+        </ul>
+
+        <h3>Chuong 9: Hai mau (2 Samples) - Chi tiet Formula Sheet</h3>
+        
+        <h4>A. So sanh 2 Trung binh (&mu;<sub>1</sub> - &mu;<sub>2</sub>)</h4>
+        <ul>
+            <li><strong>Case 1: Da biet &sigma;<sub>1</sub>, &sigma;<sub>2</sub></strong>
+                <br> &rarr; Dung <strong>Z-test</strong>.</li>
+            
+            <li><strong>Case 2: Khong biet &sigma;, gia su phuong sai BANG nhau</strong>
+                <br> &rarr; Dung <strong>T-test</strong> voi Phuong sai gop (Pooled variance - s<sub>p</sub>).
+                <br> <em>Dau hieu:</em> "Assuming equal variances".
+            </li>
+
+            <li><strong>Case 3: Khong biet &sigma;, phuong sai KHAC nhau</strong>
+                <br> &rarr; Dung <strong>T-test</strong> voi bac tu do (df) tinh theo cong thuc dai (Welch's).
+                <br> <em>Dau hieu:</em> "Not assuming equal variances".
+            </li>
+        </ul>
+
+        <h4>B. So sanh 2 Ty le (p<sub>1</sub> - p<sub>2</sub>)</h4>
+        <ul>
+            <li><strong>Khoang tin cay (CI):</strong> Dung rieng le p&#770;<sub>1</sub> va p&#770;<sub>2</sub>.</li>
+            <li><strong>Kiem dinh gia thuyet (Test):</strong> Phai tinh <strong>Ty le gop (Pooled Proportion - p&#772;)</strong>.</li>
+        </ul>
+
+        <h3>Chuong 10: Hoi quy tuyen tinh</h3>
+        <ul>
+            <li>Phuong trinh: <strong>y&#770; = a + bx</strong> (Tren may tinh hien thi A va B).</li>
+            <li><strong>He so tuong quan r:</strong> Kiem tra do manh yeu moi quan he.</li>
+            <li>Kiem dinh r: Dung cong thuc t = r&radic;(n-2) / &radic;(1-r&sup2;).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 style="color: #d32f2f; border-color: #d32f2f;">CASIO 580VN X CHEAT SHEET</h2>
+        <p><em>Nho bat cot Tan so truoc: <span class="key">SHIFT</span> <span class="key">MENU</span> &darr; <span class="key">3</span> <span class="key">1</span></em></p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Chuc nang</th>
+                    <th>Thao tac phim</th>
+                    <th>Dung cho</th>
+                    <th>Luu y</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Tinh Mean, SD</strong></td>
+                    <td><span class="key">MENU</span> <span class="key">6</span> <span class="key">1</span></td>
+                    <td>Chuong 3, 5</td>
+                    <td>Nhap X va Freq. Lay <strong>s<sub>x</sub></strong> neu la mau.</td>
+                </tr>
+                <tr>
+                    <td><strong>Hoi quy (a, b, r)</strong></td>
+                    <td><span class="key">MENU</span> <span class="key">6</span> <span class="key">2</span></td>
+                    <td>Chuong 10</td>
+                    <td><span class="key">OPTN</span> <span class="key">4</span> de xem ket qua.</td>
+                </tr>
+                <tr>
+                    <td><strong>Phan phoi Chuan</strong></td>
+                    <td><span class="key">MENU</span> <span class="key">7</span> <span class="key">2</span></td>
+                    <td>Chuong 4, 6</td>
+                    <td><strong>Normal CD</strong>. Ch 6 chia &sigma; cho &radic;n.</td>
+                </tr>
+                <tr>
+                    <td><strong>Tim Z (nguoc)</strong></td>
+                    <td><span class="key">MENU</span> <span class="key">7</span> <span class="key">3</span></td>
+                    <td>Chuong 7, 8</td>
+                    <td><strong>InvNormal</strong>. Area la dien tich ben trai.</td>
+                </tr>
+                <tr>
+                    <td><strong>Tim T (nguoc)</strong></td>
+                    <td><span class="key">MENU</span> <span class="key">7</span> <span class="key">4</span></td>
+                    <td>Chuong 7, 8, 9</td>
+                    <td><strong>InvT</strong>. Can nhap bac tu do (df).</td>
+                </tr>
+                <tr>
+                    <td><strong>Binomial</strong></td>
+                    <td><span class="key">MENU</span> <span class="key">7</span> &darr; <span class="key">1</span></td>
+                    <td>Chuong 3</td>
+                    <td>PD (tai 1 diem), CD (tich luy).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Chuc ban on thi tot va dat diem cao mon MAS291!</p>
+        <p>lam boi Vo Thanh Tuan</p>
+    </div>
+
+</body>
+</html>
